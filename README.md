@@ -57,26 +57,26 @@ Edit [`/src/utils/siteConfig.js`](https://github.com/ryanwiemer/gatsby-starter-g
 
 ```js
 module.exports = {
-  siteTitle: 'GCN',
-  siteTitleAlt: 'GCN Gatsby Starter',
-  publisher: 'Publisher named GCN',
+  siteTitle: "GCN",
+  siteTitleAlt: "GCN Gatsby Starter",
+  publisher: "Publisher named GCN",
   siteDescription:
-    'A starter template to build amazing static websites with Gatsby, Contentful and Netlify',
-  siteUrl: 'https://gcn.netlify.com',
+    "A starter template to build amazing static websites with Gatsby, Contentful and Netlify",
+  siteUrl: "https://gcn.netlify.com",
   postsPerHomePage: 7,
   postsPerPage: 6,
-  author: 'GCN User',
-  authorUrl: 'https://gcn.netlify.com/about/',
-  userTwitter: '@twitter',
-  shortTitle: 'GCN App',
-  shareImage: '/logos/share.jpg',
+  author: "GCN User",
+  authorUrl: "https://gcn.netlify.com/about/",
+  userTwitter: "@twitter",
+  shortTitle: "GCN App",
+  shareImage: "/logos/share.png",
   shareImageWidth: 900,
   shareImageHeight: 600,
-  siteLogo: '/logos/logo-512.png',
-  backgroundColor: '#e9e9e9',
-  themeColor: '#121212',
-  copyright: 'Copyright © 2018 GCN User',
-}
+  siteLogo: "/logos/logo-512.png",
+  backgroundColor: "#e9e9e9",
+  themeColor: "#121212",
+  copyright: "Copyright © 2018 GCN User"
+};
 ```
 
 **Note:** If you do not see your changes reflected when developing locally you may need to run `npm run clean` and restart the development server.
@@ -88,21 +88,21 @@ Edit [`/src/styles/theme.js`](https://github.com/ryanwiemer/gatsby-starter-gcn/b
 ```js
 const theme = {
   colors: {
-    base: '#121212',
-    secondary: '#e9e9e9',
-    tertiary: '#f3f3f3',
-    highlight: '#5b8bf7',
+    base: "#121212",
+    secondary: "#e9e9e9",
+    tertiary: "#f3f3f3",
+    highlight: "#5b8bf7"
   },
   sizes: {
-    maxWidth: '1200px',
-    maxWidthCentered: '650px',
+    maxWidth: "1200px",
+    maxWidthCentered: "650px"
   },
   responsive: {
-    small: '35em',
-    medium: '50em',
-    large: '70em',
-  },
-}
+    small: "35em",
+    medium: "50em",
+    large: "70em"
+  }
+};
 ```
 
 ### Using Gatsby Standard
@@ -112,7 +112,7 @@ const theme = {
 
 ### Content and SEO
 
-1.  You can replace the `share.jpg` and `logo-512` files in the `static/logos` directory. After replacing these files ensure that you edit the image size dimensions specified in `/src/utils/siteConfig.js`
+1.  You can replace the `share.png` and `logo-512` files in the `static/logos` directory. After replacing these files ensure that you edit the image size dimensions specified in `/src/utils/siteConfig.js`
 2.  Meta descriptions are defined in Contentful. If you choose to leave this field blank on new posts a 320 character excerpt of the post/page will be used.
 3.  **IMPORTANT:** Be sure to manually enter at least one meta description on a page and post in Contentful or the site will fail to build.
 
