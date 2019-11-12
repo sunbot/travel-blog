@@ -42,7 +42,7 @@ const PostTemplate = ({ data, pageContext }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    Post(slug: { eq: $slug }) {
+    contentfulPost(slug: { eq: $slug }) {
       title
       slug
       metaDescription {
