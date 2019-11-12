@@ -12,8 +12,15 @@ import PostDetails from "../components/PostDetails";
 import SEO from "../components/SEO";
 
 const PostTemplate = ({ data, pageContext }) => {
-  const { title, slug, heroImage, body, publishDate, tags } = data.Post;
-  const postNode = data.Post;
+  const {
+    title,
+    slug,
+    heroImage,
+    body,
+    publishDate,
+    tags
+  } = data.contentfulPost;
+  const postNode = data.contentfulPost;
 
   const previous = pageContext.prev;
   const next = pageContext.next;
