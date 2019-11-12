@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Wrapper = styled.footer`
   display: flex;
@@ -8,7 +8,7 @@ const Wrapper = styled.footer`
   align-items: flex-start;
   margin: 0 auto;
   max-width: ${props => props.theme.sizes.maxWidth};
-`
+`;
 
 const List = styled.ul`
   display: flex;
@@ -19,7 +19,7 @@ const List = styled.ul`
   border-top: 1px solid ${props => props.theme.colors.secondary};
   padding: 1em 0 2em;
   margin: 0 1.5em;
-`
+`;
 
 const Item = styled.li`
   display: inline-block;
@@ -39,43 +39,22 @@ const Item = styled.li`
       color: ${props => props.theme.colors.base};
     }
   }
-`
+`;
 
 const Footer = () => (
   <Wrapper>
     <List>
       <Item>
         <a
-          href="https://www.contentful.com/"
-          rel="nofollow noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            src="https://images.ctfassets.net/fo9twyrwpveg/44baP9Gtm8qE2Umm8CQwQk/c43325463d1cb5db2ef97fca0788ea55/PoweredByContentful_LightBackground.svg"
-            style={{ width: '100px' }}
-            alt="Powered by Contentful"
-          />
-        </a>
-      </Item>
-      <Item>
-        <a
-          href="https://github.com/ryanwiemer/gatsby-starter-gcn"
+          href="https://www.instagram.com/asunrey/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          gatsby-starter-gcn
-        </a>{' '}
-        by{' '}
-        <a
-          href="https://github.com/ryanwiemer"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @ryanwiemer
+          @asunrey
         </a>
       </Item>
     </List>
   </Wrapper>
-)
+);
 
-export default Footer
+export default Footer;
