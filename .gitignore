@@ -1,5 +1,4 @@
 .DS_STORE
-node_modules
 scripts/flow/*/.flowconfig
 *~
 *.pyc
@@ -22,3 +21,12 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
+node_modules
+.cache/
+public/
+.DS_Store
+yarn*
+*.log
+contentful-import-error-log*
+.env*
+.contentful.json
