@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   margin: 0 auto 2em;
@@ -7,24 +7,29 @@ const Wrapper = styled.div`
   span {
     margin: 0 0.5rem;
   }
-`
+`;
 
 const Date = styled.p`
   display: inline-block;
-`
+`;
 
 const ReadingTime = styled.p`
   display: inline-block;
-`
+`;
 
 const PostDetails = props => {
   return (
     <Wrapper>
-      <Date>📅 {props.date}</Date>
+      <Date>
+        <span role="img" aria-label="calendar">
+          📅
+        </span>{" "}
+        {props.date}
+      </Date>
       <span>•</span>
       <ReadingTime>{`⏱️${props.timeToRead} min read `}</ReadingTime>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default PostDetails
+export default PostDetails;

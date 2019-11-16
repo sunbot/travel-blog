@@ -60,6 +60,17 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Proxima Nova`,
+            variants: [`400`, `700`]
+          }
+        ]
+      }
+    },
     `gatsby-plugin-catch-links`,
     {
       resolve: "gatsby-source-contentful",

@@ -1,12 +1,13 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
 const Header = styled.header`
-  background: ${props => props.theme.colors.base};
+  border-top: 7px solid #ef8e58;
+  background: white;
   width: 100%;
   padding: 1.5em 0;
-`
+`;
 const Nav = styled.nav`
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidth};
@@ -33,16 +34,17 @@ const Nav = styled.nav`
     color: DarkGray;
     font-weight: 600;
     transition: all 0.2s;
-    border-bottom: 2px solid ${props => props.theme.colors.base};
     &:hover {
-      color: white;
+      color: #ef8e58;
+      border-bottom: 2px solid ${props => props.theme.colors.base};
     }
   }
-`
+`;
 
 const activeLinkStyle = {
-  color: 'white',
-}
+  color: "#EF8E58"
+  // borderBottom: "2px solid black"
+};
 
 const Menu = () => {
   return (
@@ -51,7 +53,11 @@ const Menu = () => {
         <ul>
           <li>
             <Link to="/" activeStyle={activeLinkStyle}>
-              Home
+              {/* <div class="px-6 py-10">
+                <div class="flex flex-wrap"> */}
+              Hop, Skip, and Jump
+              {/* </div>
+              </div> */}
             </Link>
           </li>
           <li>
@@ -67,7 +73,7 @@ const Menu = () => {
         </ul>
       </Nav>
     </Header>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;

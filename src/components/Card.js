@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
+import tw from "tailwind.macro";
 
 const Post = styled.li`
+  ${tw`rounded-lg overflow-hidden shadow-lg`};
   position: relative;
   border: 1px solid ${props => props.theme.colors.secondary};
-  border-radius: 2px;
   margin: 0 0 1em 0;
   width: 100%;
   transition: background 0.2s;
@@ -38,7 +39,7 @@ const Post = styled.li`
 `;
 
 const Title = styled.h2`
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 600;
   text-transform: capitalize;
   margin: 1rem 1rem 0.5rem 1rem;
@@ -73,7 +74,11 @@ const Card = ({
   return (
     <Post featured={props.featured}>
       <Link to={`/${slug}/`}>
-        <Img fluid={heroImage.fluid} backgroundColor={"#eeeeee"} />
+        <Img
+          css={tw`bg-blue-700`}
+          fluid={heroImage.fluid}
+          backgroundColor={"#eeeeee"}
+        />
         <Title>{title}</Title>
         <Date>{publishDate}</Date>
         <ReadingTime>{timeToRead} min read</ReadingTime>
